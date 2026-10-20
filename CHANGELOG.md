@@ -38,3 +38,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Setting up the custom 404 page on GCS 
 - Added comments to create.sh 
 - Generated a CHANGELOG file 
+
+## 2026-10-20
+- Generated a IaC folder with `.tf` files that are used to create the GCP bucket + roles

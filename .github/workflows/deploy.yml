@@ -17,6 +17,8 @@ jobs:
           export_default_credentials: true
 
       - name: Deployment to production server 
+        env:
+          WEBSITE_BUCKET_URI: ${{ vars.WEBSITE_BUCKET_URI }}
         run: |
           echo deploying new version on pierre-alexandre.io ...
           make deploy

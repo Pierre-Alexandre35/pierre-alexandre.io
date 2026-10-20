@@ -1,1 +1,3 @@
-deploy: $(shell ./bin/deploy.sh)
+.PHONY: deploy
+deploy:
+	./bin/deploy.sh

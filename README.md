@@ -20,6 +20,11 @@ This website is 100% static and updated on a regular basis. I am also using my p
 ## Architecture
 ![alt text](docs/architecture.png)
 
+## Infrastructure and deployment
+
+The public Google Cloud Storage bucket is managed with Terraform in
+[`iac/`](iac/README.md). Follow that guide to create it in
+`personal-website-512218`, then run `make deploy` to upload `public_html/`.
 
 ## Changelog
 Detailed changes for each merged pull requests are documented in the [CHANGELOG.md](https://github.com/Pierre-Alexandre35/pierre-alexandre.io/blob/develop/CHANGELOG.md)
@@ -28,7 +33,6 @@ Detailed changes for each merged pull requests are documented in the [CHANGELOG.
 ## Roadmap
 - Fix some broken links for some of my projects
 - Fix navbar toggle for the mobiel version
-- Use Terraform for infra (GCS bucket)
 - Refactor public html code:
     - Review naming for classes
     - Only use classes rather than a mix of classes + IDs
